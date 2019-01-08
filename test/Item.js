@@ -212,5 +212,10 @@ contract("Item", function (accounts) {
       const { logs } = await item.Retire();
       assert.eventIsWorkbenchContractUpdated(logs[0], "BasicItemRegistry", "Item", "Retire", accounts[0]);
     });
+
+    it("should fail", async function () {
+     
+      assert(false, "This should fail.")
+    });
   });
 });
