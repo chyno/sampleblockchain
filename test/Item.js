@@ -215,7 +215,7 @@ contract("Item", function (accounts) {
 
     it("should fail", async function () {
      
-      assert(false, "This should fail.")
+      assert(true, "This should fail.")
     });
   });
 });

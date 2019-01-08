@@ -10,7 +10,7 @@
     "test": "npx truffle test",
     "build": "npx truffle compile && npm test"
   },
-  "author": "",
+  "author": "JOhn Chynoweth",
   "license": "MIT",
   "devDependencies": {
     "bignumber.js": "^8.0.1",
