@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.200000000000001" tests="38" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-01-13T18:39:23" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Contract: BasicItemRegistry" timestamp="2019-01-13T18:39:23" tests="0" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="constructor" timestamp="2019-01-13T18:39:23" tests="4" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.17500000000000002">
+    <testcase name="Contract: BasicItemRegistry constructor should be nameable" time="0.044" classname="should be nameable">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry constructor should be describable" time="0.055" classname="should be describable">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry constructor should start off in the Created state" time="0.05" classname="should start off in the Created state">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry constructor should emit a WorkbenchContractCreated event" time="0.026" classname="should emit a WorkbenchContractCreated event">
+    </testcase>
+  </testsuite>
+  <testsuite name="OpenRegistry" timestamp="2019-01-13T18:39:23" tests="2" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.036">
+    <testcase name="Contract: BasicItemRegistry OpenRegistry should set an open state" time="0.036" classname="should set an open state">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry OpenRegistry should emit a WorkbenchContractUpdated event" time="0" classname="should emit a WorkbenchContractUpdated event">
+    </testcase>
+  </testsuite>
+  <testsuite name="CloseRegistry" timestamp="2019-01-13T18:39:24" tests="2" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.037">
+    <testcase name="Contract: BasicItemRegistry CloseRegistry should set a closed state" time="0.037" classname="should set a closed state">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry CloseRegistry should emit a WorkbenchContractUpdated event" time="0" classname="should emit a WorkbenchContractUpdated event">
+    </testcase>
+  </testsuite>
+  <testsuite name="RegisterItem" timestamp="2019-01-13T18:39:24" tests="0" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="state: Create" timestamp="2019-01-13T18:39:24" tests="1" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.26">
+    <testcase name="Contract: BasicItemRegistry RegisterItem state: Create should not register an item when in the Created state" time="0.26" classname="should not register an item when in the Created state">
+    </testcase>
+  </testsuite>
+  <testsuite name="state: Open" timestamp="2019-01-13T18:39:25" tests="1" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.543">
+    <testcase name="Contract: BasicItemRegistry RegisterItem state: Open should register an item when in the Open state" time="0.543" classname="should register an item when in the Open state">
+    </testcase>
+  </testsuite>
+  <testsuite name="state: Closed" timestamp="2019-01-13T18:39:27" tests="1" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.301">
+    <testcase name="Contract: BasicItemRegistry RegisterItem state: Closed should not register an item when in the Closed state" time="0.301" classname="should not register an item when in the Closed state">
+    </testcase>
+  </testsuite>
+  <testsuite name="events" timestamp="2019-01-13T18:39:28" tests="1" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.544">
+    <testcase name="Contract: BasicItemRegistry RegisterItem events should emit a WorkbenchContractUpdated event when item is successfully registered" time="0.544" classname="should emit a WorkbenchContractUpdated event when item is successfully registered">
+    </testcase>
+  </testsuite>
+  <testsuite name="view functions" timestamp="2019-01-13T18:39:30" tests="0" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="IsRegisteredItemContractAddress" timestamp="2019-01-13T18:39:33" tests="2" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.121">
+    <testcase name="Contract: BasicItemRegistry view functions IsRegisteredItemContractAddress should return true for registered item addresses" time="0.09" classname="should return true for registered item addresses">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry view functions IsRegisteredItemContractAddress should return false if given an unknown address" time="0.031" classname="should return false if given an unknown address">
+    </testcase>
+  </testsuite>
+  <testsuite name="IsRegisteredItemId" timestamp="2019-01-13T18:39:33" tests="2" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.33">
+    <testcase name="Contract: BasicItemRegistry view functions IsRegisteredItemId should return true for registered item ids" time="0.268" classname="should return true for registered item ids">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry view functions IsRegisteredItemId should return false if given an unknown id" time="0.062" classname="should return false if given an unknown id">
+    </testcase>
+  </testsuite>
+  <testsuite name="GetItemByAddress" timestamp="2019-01-13T18:39:33" tests="2" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.269">
+    <testcase name="Contract: BasicItemRegistry view functions GetItemByAddress should return the correct item Id given an address" time="0.224" classname="should return the correct item Id given an address">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry view functions GetItemByAddress should revert if given an unknown address" time="0.045" classname="should revert if given an unknown address">
+    </testcase>
+  </testsuite>
+  <testsuite name="GetItemByItemId" timestamp="2019-01-13T18:39:34" tests="2" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.327">
+    <testcase name="Contract: BasicItemRegistry view functions GetItemByItemId should return the correct item address given an Id" time="0.275" classname="should return the correct item address given an Id">
+    </testcase>
+    <testcase name="Contract: BasicItemRegistry view functions GetItemByItemId should revert if given an unknown Id" time="0.052" classname="should revert if given an unknown Id">
+    </testcase>
+  </testsuite>
+  <testsuite name="GetNumberOfRegisteredItems" timestamp="2019-01-13T18:39:34" tests="1" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.028">
+    <testcase name="Contract: BasicItemRegistry view functions GetNumberOfRegisteredItems should return the number of items in the registry" time="0.028" classname="should return the number of items in the registry">
+    </testcase>
+  </testsuite>
+  <testsuite name="GetItemAtIndex" timestamp="2019-01-13T18:39:34" tests="1" file="/mnt/c/linuxdev/sampleblockchain/test/BasicItemRegistry.js" failures="0" time="0.064">
+    <testcase name="Contract: BasicItemRegistry view functions GetItemAtIndex should return the correct item for a given index" time="0.064" classname="should return the correct item for a given index">
+    </testcase>
+  </testsuite>
+  <testsuite name="Contract: Item" timestamp="2019-01-13T18:39:34" tests="0" file="/mnt/c/linuxdev/sampleblockchain/test/Item.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="constructor" timestamp="2019-01-13T18:39:35" tests="9" file="/mnt/c/linuxdev/sampleblockchain/test/Item.js" failures="0" time="0.301">
+    <testcase name="Contract: Item constructor should have a manufacturer address" time="0.023" classname="should have a manufacturer address">
+    </testcase>
+    <testcase name="Contract: Item constructor should have an itemId" time="0.031" classname="should have an itemId">
+    </testcase>
+    <testcase name="Contract: Item constructor should have a make" time="0.034" classname="should have a make">
+    </testcase>
+    <testcase name="Contract: Item constructor should have a model" time="0.035" classname="should have a model">
+    </testcase>
+    <testcase name="Contract: Item constructor should have a color" time="0.037" classname="should have a color">
+    </testcase>
+    <testcase name="Contract: Item constructor should have a manufactureDate" time="0.044" classname="should have a manufactureDate">
+    </testcase>
+    <testcase name="Contract: Item constructor should have a factoryId" time="0.048" classname="should have a factoryId">
+    </testcase>
+    <testcase name="Contract: Item constructor should be created in the Active state" time="0.036" classname="should be created in the Active state">
+    </testcase>
+    <testcase name="Contract: Item constructor should emit a WorkbenchContractCreated event" time="0.013" classname="should emit a WorkbenchContractCreated event">
+    </testcase>
+  </testsuite>
+  <testsuite name="RegisterItem" timestamp="2019-01-13T18:39:35" tests="4" file="/mnt/c/linuxdev/sampleblockchain/test/Item.js" failures="0" time="3.464">
+    <testcase name="Contract: Item RegisterItem should register itself successfully" time="0.922" classname="should register itself successfully">
+    </testcase>
+    <testcase name="Contract: Item RegisterItem should emit a WorkbenchContractUpdated event" time="0.872" classname="should emit a WorkbenchContractUpdated event">
+    </testcase>
+    <testcase name="Contract: Item RegisterItem should not change Item state" time="0.854" classname="should not change Item state">
+    </testcase>
+    <testcase name="Contract: Item RegisterItem should revert if item is retired" time="0.816" classname="should revert if item is retired">
+    </testcase>
+  </testsuite>
+  <testsuite name="Retire" timestamp="2019-01-13T18:39:40" tests="3" file="/mnt/c/linuxdev/sampleblockchain/test/Item.js" failures="0" time="0.4">
+    <testcase name="Contract: Item Retire should change state to Retired" time="0.241" classname="should change state to Retired">
+    </testcase>
+    <testcase name="Contract: Item Retire should emit a WorkbenchContractUpdated event" time="0.159" classname="should emit a WorkbenchContractUpdated event">
+    </testcase>
+    <testcase name="Contract: Item Retire should not fail" time="0" classname="should not fail">
+    </testcase>
+  </testsuite>
+</testsuites>
