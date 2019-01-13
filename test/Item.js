@@ -213,9 +213,9 @@ contract("Item", function (accounts) {
       assert.eventIsWorkbenchContractUpdated(logs[0], "BasicItemRegistry", "Item", "Retire", accounts[0]);
     });
 
-    it("should fail", async function () {
+    it("should not fail", async function () {
      
-      assert(true, "This should fail.")
+      assert(true, "This should PASS.")
     });
   });
 });

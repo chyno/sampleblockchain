@@ -1,0 +1,18 @@
+{
+    "name": "GameATron4000",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http;//localhost:5000/api/messages",
+            "id": "d89f0e50-12f9-11e9-9ffe-110477e4cd1f",
+            "name": "http;//localhost:5000/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\dev\\blockchain\\sampleblockchain\\GameATron4000.bot"
+}
